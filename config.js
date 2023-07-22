@@ -3,7 +3,7 @@ module.exports = {
   SUPPORT_SERVER: "https://eeveegaming.cf", // Your bot support server
   PREFIX_COMMANDS: {
     ENABLED: true, // Enable/Disable prefix commands
-    DEFAULT_PREFIX: "v!", // Default prefix for the bot
+    DEFAULT_PREFIX: "?", // Default prefix for the bot
   },
   INTERACTIONS: {
     SLASH: true, // Should the interactions be enabled
@@ -106,7 +106,7 @@ module.exports = {
     ENABLED: true, // Whether or not the bot should update its status
     STATUS: "online", // The bot's status [online, idle, dnd, invisible]
     TYPE: "PLAYING", // Status type for the bot [PLAYING | LISTENING | WATCHING | COMPETING]
-    MESSAGE: "mes peluches ! | Prefix : v!", // Your bot status message
+    MESSAGE: "être un bot ! | Prefix : ?", // Your bot status message
   },
 
   STATS: {
