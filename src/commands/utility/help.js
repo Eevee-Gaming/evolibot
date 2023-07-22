@@ -119,10 +119,10 @@ async function getHelpMenu({ client, guild }) {
     .setThumbnail(client.user.displayAvatarURL())
     .setDescription(
       "**About Me:**\n" +
-        `Hello I am ${guild.members.me.displayName}!\n` +
-        "A cool multipurpose discord bot which can serve all your needs\n\n" +
-        `**Invite Me:** [Here](${client.getInvite()})\n` +
-        `**Support Server:** [Join](${SUPPORT_SERVER})`
+        `Coucou, je suis ${guild.members.me.displayName} !\n` +
+        "Je suis ici pour divertir les membres et aider au serveur !\n\n" +
+        `Que puis'je faire pour toi ?` +
+        `Clique sur la barre en dessous pour regarder ce que je peut faire !`
     );
 
   return {
