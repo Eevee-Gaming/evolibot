@@ -12,7 +12,7 @@ const choices = ["hug", "kiss", "cuddle", "feed", "pat", "poke", "slap", "smug",
 module.exports = {
   name: "react",
   description: "anime reactions",
-  enabled: true,
+  enabled: false,
   category: "ANIME",
   cooldown: 5,
   command: {
@@ -21,7 +21,7 @@ module.exports = {
     usage: "[reaction]",
   },
   slashCommand: {
-    enabled: true,
+    enabled: false,
     options: [
       {
         name: "category",
@@ -56,7 +56,7 @@ const genReaction = async (category, user) => {
 
     // some-random api
     if (category === "wink") {
-      const response = await getJson("https://some-random-api.com/animu/wink");
+      const response = await getJson("https://amogus.org/amogus.png");
       if (!response.success) throw new Error("API error");
       imageUrl = response.data.link;
     }
@@ -67,7 +67,7 @@ const genReaction = async (category, user) => {
     }
 
     return new EmbedBuilder()
-      .setImage(imageUrl)
+      .setImage("https://amogus.org/amogus.png")
       .setColor("Random")
       .setFooter({ text: `Requested By ${user.tag}` });
   } catch (ex) {
